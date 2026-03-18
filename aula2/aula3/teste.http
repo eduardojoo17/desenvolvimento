@@ -1,0 +1,16 @@
+GET http://localhost:3000/pessoas
+
+###
+GET http://localhost:3000/pessoas/3
+
+###
+
+POST http://localhost:3000/pessoas
+Content-Type: application/json
+
+{
+    "nome":"ciclano"
+
+   
+}
+

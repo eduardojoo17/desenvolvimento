@@ -1,0 +1,17 @@
+GET http://localhost:3000/pessoas?nome=ciclano&area=pastor
+
+
+###
+GET http://localhost:3000/pessoas/3
+
+###
+
+POST http://localhost:3000/pessoas
+Content-Type: application/json
+
+{
+    "nome":"ciclano",
+    "idade":22,
+    "area":"pastor"
+}
+

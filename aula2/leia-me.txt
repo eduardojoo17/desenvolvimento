@@ -1,0 +1,6 @@
+npm init -y  
+npm i express   
+npm i -D @types/express  
+
+
+http://localhost:3000/pessoa/eduardo/28?x=teste
