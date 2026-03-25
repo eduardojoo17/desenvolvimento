@@ -1,3 +1,25 @@
 GET http://localhost:3000/usuarios
 
 ###
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+  "usuario": "joao",
+  "ativo": true
+}
+###
+GET http://localhost:3000/usuarios/3
+
+###
+
+DELETE http://localhost:3000/usuarios/2
+
+###
+
+PUT http://localhost:3000/usuarios/1
+Content-Type: application/json
+
+{ "usuario": "admin_novo", "ativo": false }
+
+###
