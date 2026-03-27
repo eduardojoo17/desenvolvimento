@@ -1,24 +1,28 @@
 import {usuarios} from "../data/usuarios.js"
 
 export function listarUsuarios(req,res){
-    res.json(usuarios)
+    res.status(200).json(usuarios)
 }
 
 export function criarUsuario(req,res){
-    const usuario = req.body;
+    const dados = req.body;
 
-    if(usuario.usuario == null||usuario.ativo == null ){
-       return res.json( {mensagem: "campo incompleto"})
+    if(!dados.usuario||!dados.ativo==undefined ){
+       return res.status(400).json( {mensagem: "campo incompleto"})
     }
 
-    const novoUsuario = {
-    id: usuarios.length+1,
-    usuario: usuario.usuario,
-    ativo: usuario.ativo}
+    const ultimoID = usuarios[usuarios.length -1].id
+    const novoID = ultimoID?ultimoID + 1 :1
+const novoUsuario={
+    id: novoid,
+    usuario: dados.usuario,
+    ativo: dados.ativo}
 
     usuarios.push(novoUsuario);
 
-    res.json({mensagem: "usuario adicionado"})
+    res.status(201).json({mensagem: "usuario adicionado",
+      usuario: novoUsuario
+    })
     
 }
 

@@ -1,0 +1,28 @@
+### Listar Usuários
+GET http://localhost:3000/usuarios
+
+### Criar usuário
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+    "usuario": "pedro",
+    "ativo": true
+}
+
+### Buscar usuário por ID
+GET http://localhost:3000/usuarios/2
+
+### Atualizar Usuário (Muda o ID 2)
+PUT http://localhost:3000/usuarios/2
+Content-Type: application/json
+
+{
+    "usuario": "carlos_novo_nome",
+    "ativo": false
+}
+
+### Deletar usuário por ID
+DELETE http://localhost:3000/usuarios/2
+
+

@@ -1,0 +1,24 @@
+### Listar Livros
+GET http://localhost:3000/livros
+
+### Criar Livro
+POST http://localhost:3000/livros
+Content-Type: application/json
+
+{
+    "titulo": "Star Wars: O Império Contra-Ataca"
+}
+
+### Deletar Livro
+DELETE http://localhost:3000/livros/1
+
+### Emprestar Livro (Vincula Usuário 1 ao Livro 2)
+PATCH http://localhost:3000/livros/2/emprestar
+Content-Type: application/json
+
+{
+    "idUsuario": 1
+}
+
+### Devolver Livro (Limpa o dono do Livro 2)
+PATCH http://localhost:3000/livros/2/devolver
