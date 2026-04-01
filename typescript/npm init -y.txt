@@ -1,0 +1,4 @@
+npm init -y   
+tsc --init  
+npm i -g typescript ts-node 
+npx ts-node CalculoDeDesconto.ts    
