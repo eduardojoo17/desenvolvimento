@@ -1,0 +1,32 @@
+1) Instalar a biblioteca nodemon como desenvolvimento
+
+npm i -D nodemon
+
+2) Adicionar um script ao documento de configuração do projeto (package.json)
+a) dentro da objeto json da opção script, criar uma nova chave chamada "dev"
+(pode ser qualquer nome que queira)
+b) o valor de dev deve ser "nodemon server.js"
+(nome do arquivo do servidor)
+
+"scripts": {
+    "dev": "nodemon server.js"
+}
+
+3) Executar a api com o comando "npm run dev"
+
+npm run dev
+
+
+
+biblioteca para conectar ao banco de dados
+npm i pg
+
+
+
+//npm install -D typescript ts-node-dev @type/express @type/pg @type/node
+
+
+npx tsc --init
+
+
+npm install -D typescript @types/node @types/express @types/pg tsx
