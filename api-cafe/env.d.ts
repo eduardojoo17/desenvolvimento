@@ -1,5 +1,5 @@
 declare namespace NodeJS {
-    interface processEnv{
+    interface ProcessEnv {
         PORT: string;
         DATABASE_URL: string;
     }

@@ -30,3 +30,27 @@ npx tsc --init
 
 
 npm install -D typescript @types/node @types/express @types/pg tsx
+
+
+
+
+
+
+
+
+
+{
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.formatOnSave": true,
+    "[jsonc]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+  
+}
